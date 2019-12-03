@@ -1,24 +1,11 @@
 n = int(input())
 a = []
+b = []
+c = []
 for i in range(n):
     a.append(int(input()))
-c = 1
-for i in range(n):
-    for j in range(i+1, n):
-        if a[i] == a[j]:
-            c += 1
-            f = i
-            s = j
-    if c == 2:
-        a[f] = ''
-        a[s] = ''
-    c = 1
-i = 0
+b[:] = a[:]
 while i < n:
-    if a[i] == '':
-        del(a[i])
-        n -= 1
-    else:
-        i += 1
+    for j in range
 print(len(a))
 print(a)
