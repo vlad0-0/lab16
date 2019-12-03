@@ -14,9 +14,10 @@ for i in range(n):
         a[s] = ''
     c = 1
 i = 0
-while i < len(a):
+while i < n:
     if a[i] == '':
         del(a[i])
+        n -= 1
     else:
         i += 1
 print(len(a))
